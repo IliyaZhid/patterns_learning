@@ -1,0 +1,7 @@
+{
+  "name": "iliyazhid/patterns-learning",
+  "description": "Learning project for design patterns",
+  "require": {
+    "php": ">=7.4"
+  }
+}
