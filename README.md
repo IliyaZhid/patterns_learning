@@ -59,15 +59,24 @@ patterns_learning/
 │ │ │ └── PizzaBuilderTest.php
 │ │ ├── client.php  
 │ │ └── composer.json
-│ └── prototype/
+│ ├── prototype/
+│ │ ├── lib/
+│ │ │ ├── IDocumentPrototype.php
+│ │ │ ├── Document.php
+│ │ │ ├── InvoiceDocument.php
+│ │ │ ├── ContractDocument.php
+│ │ │ └── ReportDocument.php
+│ │ ├── tests/
+│ │ │ └── DocumentPrototypeTest.php
+│ │ ├── client.php  
+│ │ └── composer.json
+│ └── singleton/
 │ ├── lib/
-│ │ ├── IDocumentPrototype.php
-│ │ ├── Document.php
-│ │ ├── InvoiceDocument.php
-│ │ ├── ContractDocument.php
-│ │ └── ReportDocument.php
+│ │ ├── ISettingsInterface.php
+│ │ ├── Settings.php
+│ │ └── AppSettings.php
 │ ├── tests/
-│ │ └── DocumentPrototypeTest.php
+│ │ └── SettingsTest.php
 │ ├── client.php  
 │ └── composer.json
 ├── structural/
@@ -150,6 +159,24 @@ composer test
 
 ```bash
 cd prototype
+composer install
+php client.php
+composer test
+```
+
+</details>
+
+<details> 
+<summary>5. Одиночка (Singleton)</summary>
+
+**Описание**: Паттерн Одиночка гарантирует, что класс имеет только один экземпляр, и предоставляет глобальную точку доступа к этому экземпляру.
+
+**Пример**: Система управления настройками приложения.
+
+**Использование**:
+
+```bash
+cd creational/singleton
 composer install
 php client.php
 composer test
