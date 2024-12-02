@@ -1,0 +1,15 @@
+{
+  "name": "iliyazhid/factory-method",
+  "description": "Builder pattern example",
+  "autoload": {
+    "psr-4": {
+      "Builder\\": "lib/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "scripts": {
+    "test": "phpunit tests/"
+  }
+}

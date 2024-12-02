@@ -39,6 +39,20 @@ patterns_learning/
 │ │ └── AbstractFactoryTest.php
 │ ├── client.php  
 │ └── composer.json
+├── builder/
+│ ├── lib/
+│ │ ├── Builders/
+│ │ │ ├── IPizzaBuilder.php
+│ │ │ ├── PepperoniPizzaBuilder.php
+│ │ │ ├── MushroomPizzaBuilder.php
+│ │ │ └── HawaiianPizzaBuilder.php
+│ │ ├── Products/
+│ │ │ └── Pizza.php
+│ │ └── PizzaDirector.php
+│ ├── tests/
+│ │ └── PizzaBuilderTest.php
+│ ├── client.php  
+│ └── composer.json
 └── composer.json
 ```
 
@@ -73,3 +87,20 @@ composer install
 php client.php
 composer test
 ```
+
+### 3. Строитель (Builder)
+**Описание**: Паттерн Строитель отделяет конструирование сложного объекта от его представления, так что в результате одного и того же процесса конструирования могут получаться разные представления.
+
+**Пример**: Система создания различных видов пиццы с гибкой конфигурацией.
+
+Использование:
+
+```bash
+cd builder
+composer install
+php client.php
+composer test
+```
+
+## Дополнительные паттерны
+В будущем в этот репозиторий могут быть добавлены дополнительные паттерны проектирования с соответствующими примерами и тестами.
