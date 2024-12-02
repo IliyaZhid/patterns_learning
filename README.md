@@ -53,6 +53,17 @@ patterns_learning/
 │ │ └── PizzaBuilderTest.php
 │ ├── client.php  
 │ └── composer.json
+├── prototype/
+│ ├── lib/
+│ │ ├── IDocumentPrototype.php
+│ │ ├── Document.php
+│ │ ├── InvoiceDocument.php
+│ │ ├── ContractDocument.php
+│ │ └── ReportDocument.php
+│ ├── tests/
+│ │ └── DocumentPrototypeTest.php
+│ ├── client.php  
+│ └── composer.json
 └── composer.json
 ```
 
@@ -97,6 +108,20 @@ composer test
 
 ```bash
 cd builder
+composer install
+php client.php
+composer test
+```
+
+### 4. Прототип (Prototype)
+**Описание**: Паттерн Прототип позволяет копировать объекты, не вдаваясь в подробности их реализации.
+
+**Пример**: Система создания и клонирования различных видов документов (счета, договора, отчеты).
+
+Использование:
+
+```bash
+cd prototype
 composer install
 php client.php
 composer test
