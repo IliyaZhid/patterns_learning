@@ -1,0 +1,15 @@
+{
+  "name": "iliyazhid/observer",
+  "description": "Observer pattern example",
+  "autoload": {
+    "psr-4": {
+      "Behavioral\\Observer\\": "lib/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "scripts": {
+    "test": "phpunit tests/"
+  }
+}

@@ -31,7 +31,9 @@ patterns_learning/
 ├── behavioral/
 │ ├── strategy/  
 │ │ └── ...
-│ └── template_method/  
+│ ├── template_method/  
+│ │ └── ...
+│ └── observer/  
 │   └── ...
 └── composer.json
 ```
@@ -105,13 +107,13 @@ abstract_factory/
 │ │ ├── GUIFactory.php
 │ │ ├── WindowsFactory.php
 │ │ └── MacFactory.php
-│ ├── Products/
-│ │ ├── IButton.php
-│ │ ├── ICheckbox.php
-│ │ ├── WindowsButton.php
-│ │ ├── MacOSButton.php
-│ │ ├── WindowsCheckbox.php
-│ │ └── MacOSCheckbox.php
+│ └── Products/
+│   ├── IButton.php
+│   ├── ICheckbox.php
+│   ├── WindowsButton.php
+│   ├── MacOSButton.php
+│   ├── WindowsCheckbox.php
+│   └── MacOSCheckbox.php
 ├── tests/
 │ └── AbstractFactoryTest.php
 ├── client.php  
@@ -271,9 +273,9 @@ bridge/
 │ │ ├── IDevice.php
 │ │ ├── TV.php
 │ │ └── Radio.php
-│ ├── Remotes/
-│ │ ├── RemoteControl.php
-│ │ └── AdvancedRemote.php
+│ └── Remotes/
+│   ├── RemoteControl.php
+│   └── AdvancedRemote.php
 ├── tests/
 │ └── BridgeTest.php
 ├── client.php
@@ -300,10 +302,11 @@ composer test
 ```
 facade/
 ├── lib/
-│ ├── Order.php
-│ ├── Product.php
-│ ├── Shipping.php
-│ ├── Payment.php
+│ ├── SubSystems/
+│ │ ├── Order.php
+│ │ ├── Product.php
+│ │ ├── Shipping.php
+│ │ └── Payment.php
 │ └── OrderFacade.php
 ├── tests/
 │ └── FacadeTest.php
@@ -333,10 +336,11 @@ composer test
 ```
 strategy/
 ├── lib/
-│ ├── SortStrategy.php
-│ ├── BubbleSort.php
-│ ├── QuickSort.php
-│ ├── MergeSort.php
+│ ├── SortStrategies/
+│ │ ├── SortStrategy.php
+│ │ ├── BubbleSort.php
+│ │ ├── QuickSort.php
+│ │ └── MergeSort.php
 │ └── Sorter.php
 ├── tests/
 │ └── StrategyTest.php
@@ -365,11 +369,45 @@ composer test
 
 template_method/
 ├── lib/
-│ ├── Report.php
-│ ├── SalesReport.php
-│ └── CustomerReport.php
+│ └── Reports/
+│   ├── Report.php
+│   ├── SalesReport.php
+│   └── CustomerReport.php
 ├── tests/
 │ └── TemplateMethodTest.php
+├── client.php
+└── composer.json
+```
+</details>
+
+<details> 
+<summary>3. Наблюдатель (Observer)</summary>
+
+**Описание**: Паттерн Наблюдатель определяет зависимость "один ко многим" между объектами таким образом, что при изменении состояния одного объекта все зависящие от него объекты уведомляются и обновляются автоматически.
+
+**Пример**:  Система уведомлений, которая должна уведомлять подписчиков о различных событиях (например, новое сообщение, изменение статуса заказа, новое уведомление).
+
+**Использование**:
+
+```bash
+cd behavioral/observer
+composer install
+php client.php
+composer test
+```
+**Файловая структура примера**:
+```
+observer/
+├── lib/
+│ ├── Publishers/
+│ │ ├── NotificationSystem.php
+│ │ └── IPublisher.php
+│ └── Subscribers/
+│   ├── ISubscriber.php
+│   ├── SMSNotifier.php
+│   └── EmailNotifier.php
+├── tests/
+│ └── ObserverTest.php
 ├── client.php
 └── composer.json
 ```
