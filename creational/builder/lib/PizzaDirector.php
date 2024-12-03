@@ -1,12 +1,12 @@
 <?php
 
-namespace Builder;
+namespace Creational\Builder;
 
-use Builder\Builders\IPizzaBuilder;
+use Creational\Builder\Builders\IPizzaBuilder;
 
 class PizzaDirector
 {
-    public function construct(IPizzaBuilder $builder, $size, $dough, $sauce, $topping, $extraIngredients = [])
+    public function construct(IPizzaBuilder $builder, $size, $dough, $sauce, $topping, $extraIngredients = []): void
     {
         $builder->setSize($size);
         $builder->setDough($dough);

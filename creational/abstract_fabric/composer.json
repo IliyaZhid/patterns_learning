@@ -3,7 +3,7 @@
   "description": "Abstract Factory pattern example",
   "autoload": {
     "psr-4": {
-      "AbstractFactory\\": "lib/"
+      "Creational\\AbstractFactory\\": "lib/"
     }
   },
   "require": {

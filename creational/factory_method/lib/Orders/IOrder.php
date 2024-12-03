@@ -1,6 +1,6 @@
 <?php
 
-namespace FactoryMethod\Orders;
+namespace Creational\FactoryMethod\Orders;
 
 interface IOrder
 {

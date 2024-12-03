@@ -1,6 +1,6 @@
 <?php
 
-namespace Singleton;
+namespace Creational\Singleton;
 
 interface ISettingsInterface
 {

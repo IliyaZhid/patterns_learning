@@ -3,7 +3,7 @@
   "description": "Builder pattern example",
   "autoload": {
     "psr-4": {
-      "Builder\\": "lib/"
+      "Creational\\Builder\\": "lib/"
     }
   },
   "require-dev": {

@@ -3,7 +3,7 @@
   "description": "Prototype pattern example",
   "autoload": {
     "psr-4": {
-      "Prototype\\": "lib/"
+      "Creational\\Prototype\\": "lib/"
     }
   },
   "require": {

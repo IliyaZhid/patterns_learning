@@ -3,9 +3,9 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-use Prototype\InvoiceDocument;
-use Prototype\ContractDocument;
-use Prototype\ReportDocument;
+use Creational\Prototype\InvoiceDocument;
+use Creational\Prototype\ContractDocument;
+use Creational\Prototype\ReportDocument;
 
 // Создаем оригинальные документы
 $invoice = new InvoiceDocument('Счет на оплату', 'Иван Иванов', 'Счет на оплату за услуги', new \DateTime());

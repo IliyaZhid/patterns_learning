@@ -2,12 +2,12 @@
 
 namespace AbstractFactory\Tests;
 
-use AbstractFactory\Factories\WindowsFactory;
-use AbstractFactory\Factories\MacFactory;
-use AbstractFactory\Products\WindowsButton;
-use AbstractFactory\Products\MacButton;
-use AbstractFactory\Products\WindowsCheckbox;
-use AbstractFactory\Products\MacCheckbox;
+use Creational\AbstractFactory\Factories\WindowsFactory;
+use Creational\AbstractFactory\Factories\MacFactory;
+use Creational\AbstractFactory\Products\WindowsButton;
+use Creational\AbstractFactory\Products\MacButton;
+use Creational\AbstractFactory\Products\WindowsCheckbox;
+use Creational\AbstractFactory\Products\MacCheckbox;
 use PHPUnit\Framework\TestCase;
 
 

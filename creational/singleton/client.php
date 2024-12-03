@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-use Singleton\AppSettings;
+use Creational\Singleton\AppSettings;
 
 $appSettings = new AppSettings();
 

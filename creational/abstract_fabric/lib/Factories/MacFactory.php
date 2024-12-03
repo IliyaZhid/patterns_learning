@@ -1,11 +1,11 @@
 <?php
 
-namespace AbstractFactory\Factories;
+namespace Creational\AbstractFactory\Factories;
 
-use AbstractFactory\Products\IButton;
-use AbstractFactory\Products\ICheckbox;
-use AbstractFactory\Products\MacButton;
-use AbstractFactory\Products\MacCheckbox;
+use Creational\AbstractFactory\Products\IButton;
+use Creational\AbstractFactory\Products\ICheckbox;
+use Creational\AbstractFactory\Products\MacButton;
+use Creational\AbstractFactory\Products\MacCheckbox;
 
 class MacFactory implements GUIFactory
 {

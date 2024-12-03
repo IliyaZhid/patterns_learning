@@ -1,7 +1,7 @@
 <?php
-namespace FactoryMethod;
+namespace Creational\FactoryMethod;
 
-use FactoryMethod\Orders\IOrder;
+use Creational\FactoryMethod\Orders\IOrder;
 
 
 abstract class OrderFactory

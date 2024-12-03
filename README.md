@@ -102,7 +102,7 @@ patterns_learning/
 **Использование**:
 
 ```bash
-cd factory_method
+cd creational/factory_method
 composer install
 php client.php
 composer test
@@ -122,7 +122,7 @@ composer test
 OS=Windows или OS=Mac
 
 ```bash
-cd abstract_factory
+cd creational/abstract_factory
 composer install
 php client.php
 composer test
@@ -141,7 +141,7 @@ composer test
 Использование:
 
 ```bash
-cd builder
+cd creational/builder
 composer install
 php client.php
 composer test
@@ -158,7 +158,7 @@ composer test
 Использование:
 
 ```bash
-cd prototype
+cd creational/prototype
 composer install
 php client.php
 composer test

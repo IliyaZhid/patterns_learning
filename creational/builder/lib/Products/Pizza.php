@@ -1,6 +1,6 @@
 <?php
 
-namespace Builder\Products;
+namespace Creational\Builder\Products;
 
 class Pizza
 {

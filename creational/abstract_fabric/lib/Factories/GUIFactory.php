@@ -1,9 +1,9 @@
 <?php
 
-namespace AbstractFactory\Factories;
+namespace Creational\AbstractFactory\Factories;
 
-use AbstractFactory\Products\IButton;
-use AbstractFactory\Products\ICheckbox;
+use Creational\AbstractFactory\Products\IButton;
+use Creational\AbstractFactory\Products\ICheckbox;
 
 interface GUIFactory
 {

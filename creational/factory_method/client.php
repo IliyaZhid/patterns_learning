@@ -2,9 +2,9 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-use FactoryMethod\Factories\RegularOrderFactory;
-use FactoryMethod\Factories\PreOrderFactory;
-use FactoryMethod\Factories\DeliveryOrderFactory;
+use Creational\FactoryMethod\Factories\RegularOrderFactory;
+use Creational\FactoryMethod\Factories\PreOrderFactory;
+use Creational\FactoryMethod\Factories\DeliveryOrderFactory;
 
 $regularFactory = new RegularOrderFactory();
 $preFactory = new PreOrderFactory();

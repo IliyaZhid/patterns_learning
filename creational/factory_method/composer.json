@@ -3,7 +3,7 @@
   "description": "Factory Method pattern example",
   "autoload": {
     "psr-4": {
-      "FactoryMethod\\": "lib/"
+      "Creational\\FactoryMethod\\": "lib/"
     }
   },
   "require-dev": {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Prototype;
+namespace Creational\Prototype;
 
 class ReportDocument extends Document
 {

@@ -1,9 +1,9 @@
 <?php
 
-use Builder\Builders\PepperoniPizzaBuilder;
-use Builder\Builders\MushroomPizzaBuilder;
-use Builder\Builders\HawaiianPizzaBuilder;
-use Builder\PizzaDirector;
+use Creational\Builder\Builders\PepperoniPizzaBuilder;
+use Creational\Builder\Builders\MushroomPizzaBuilder;
+use Creational\Builder\Builders\HawaiianPizzaBuilder;
+use Creational\Builder\PizzaDirector;
 
 require_once __DIR__ . '/vendor/autoload.php';
 

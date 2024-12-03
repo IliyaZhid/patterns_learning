@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Singleton\Settings;
+use Creational\Singleton\Settings;
 
 class SettingsTest extends TestCase
 {

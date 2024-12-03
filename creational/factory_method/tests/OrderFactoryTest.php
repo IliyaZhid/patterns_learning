@@ -2,12 +2,12 @@
 
 namespace FactoryMethod\Tests;
 
-use FactoryMethod\Factories\RegularOrderFactory;
-use FactoryMethod\Factories\PreOrderFactory;
-use FactoryMethod\Factories\DeliveryOrderFactory;
-use FactoryMethod\Orders\RegularOrder;
-use FactoryMethod\Orders\PreOrder;
-use FactoryMethod\Orders\DeliveryOrder;
+use Creational\FactoryMethod\Factories\RegularOrderFactory;
+use Creational\FactoryMethod\Factories\PreOrderFactory;
+use Creational\FactoryMethod\Factories\DeliveryOrderFactory;
+use Creational\FactoryMethod\Orders\RegularOrder;
+use Creational\FactoryMethod\Orders\PreOrder;
+use Creational\FactoryMethod\Orders\DeliveryOrder;
 use PHPUnit\Framework\TestCase;
 
 class OrderFactoryTest extends TestCase

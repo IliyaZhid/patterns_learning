@@ -1,9 +1,9 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Prototype\InvoiceDocument;
-use Prototype\ContractDocument;
-use Prototype\ReportDocument;
+use Creational\Prototype\InvoiceDocument;
+use Creational\Prototype\ContractDocument;
+use Creational\Prototype\ReportDocument;
 
 class DocumentPrototypeTest extends TestCase
 {

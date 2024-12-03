@@ -1,10 +1,10 @@
 <?php
 
-namespace FactoryMethod\Factories;
+namespace Creational\FactoryMethod\Factories;
 
-use FactoryMethod\OrderFactory;
-use FactoryMethod\Orders\DeliveryOrder;
-use FactoryMethod\Orders\IOrder;
+use Creational\FactoryMethod\OrderFactory;
+use Creational\FactoryMethod\Orders\DeliveryOrder;
+use Creational\FactoryMethod\Orders\IOrder;
 
 class DeliveryOrderFactory extends OrderFactory
 {

@@ -1,10 +1,10 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Builder\Builders\PepperoniPizzaBuilder;
-use Builder\Builders\MushroomPizzaBuilder;
-use Builder\Builders\HawaiianPizzaBuilder;
-use Builder\PizzaDirector;
+use Creational\Builder\Builders\PepperoniPizzaBuilder;
+use Creational\Builder\Builders\MushroomPizzaBuilder;
+use Creational\Builder\Builders\HawaiianPizzaBuilder;
+use Creational\Builder\PizzaDirector;
 
 class PizzaBuilderTest extends TestCase
 {

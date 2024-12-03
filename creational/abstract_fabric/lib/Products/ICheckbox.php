@@ -1,6 +1,6 @@
 <?php
 
-namespace AbstractFactory\Products;
+namespace Creational\AbstractFactory\Products;
 
 interface ICheckbox
 {

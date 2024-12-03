@@ -1,8 +1,8 @@
 <?php
 
-namespace Builder\Builders;
+namespace Creational\Builder\Builders;
 
-use Builder\Products\Pizza;
+use Creational\Builder\Products\Pizza;
 
 class HawaiianPizzaBuilder implements IPizzaBuilder
 {
