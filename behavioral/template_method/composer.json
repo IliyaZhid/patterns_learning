@@ -10,6 +10,7 @@
     "phpunit/phpunit": "^9.5"
   },
   "scripts": {
-    "test": "phpunit tests/"
+    "test": "phpunit tests/",
+    "client": "php client.php"
   }
 }

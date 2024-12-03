@@ -26,7 +26,9 @@ patterns_learning/
 │ │ └── ...
 │ ├── bridge/  
 │ │ └── ...
-│ └── facade/  
+│ ├── facade/  
+│ │ └── ...
+│ └── proxy/  
 │   └── ...
 ├── behavioral/
 │ ├── strategy/  
@@ -56,7 +58,7 @@ patterns_learning/
 ```bash
 cd creational/factory_method
 composer install
-php client.php
+composer client
 composer test
 ```
 
@@ -96,7 +98,7 @@ OS=Windows или OS=Mac
 ```bash
 cd creational/abstract_factory
 composer install
-php client.php
+composer client
 composer test
 ```
 **Файловая структура примера**:
@@ -134,7 +136,7 @@ abstract_factory/
 ```bash
 cd creational/builder
 composer install
-php client.php
+composer client
 composer test
 ```
 **Файловая структура примера**:
@@ -167,7 +169,7 @@ builder/
 ```bash
 cd creational/prototype
 composer install
-php client.php
+composer client
 composer test
 ```
 **Файловая структура примера**:
@@ -198,7 +200,7 @@ prototype/
 ```bash
 cd creational/singleton
 composer install
-php client.php
+composer client
 composer test
 ```
 **Файловая структура примера**:
@@ -229,7 +231,7 @@ singleton/
 ```bash
 cd creational/adapter
 composer install
-php client.php
+composer client
 composer test
 ```
 **Файловая структура примера**:
@@ -261,7 +263,7 @@ adapter/
 ```bash
 cd structural/bridge
 composer install
-php client.php
+composer client
 composer test
 ```
 **Файловая структура примера**:
@@ -295,7 +297,7 @@ bridge/
 ```bash
 cd structural/facade
 composer install
-php client.php
+composer client
 composer test
 ```
 **Файловая структура примера**:
@@ -315,6 +317,35 @@ facade/
 ```
 </details>
 
+<details> 
+<summary>4. Заместитель (Proxy)</summary>
+
+**Описание**: Паттерн Заместитель предоставляет суррогатный объект, управляющий доступом к другому объекту. Это позволяет выполнять какие-либо действия до или после запроса к основному объекту.
+
+**Пример**: Система кеширования данных, которая должна предоставлять доступ к данным с возможностью кеширования результатов запросов для улучшения производительности.
+
+**Использование**:
+
+```bash
+cd structural/proxy
+composer install
+composer client
+composer test
+```
+**Файловая структура примера**:
+```
+proxy/
+├── lib/
+│ ├── DataProvider.php
+│ ├── DatabaseDataProvider.php
+│ └── CacheProxy.php
+├── tests/
+│ └── ProxyTest.php
+├── client.php
+└── composer.json
+```
+</details>
+
 ## Поведенческие паттерны проектирования
 
 <details> 
@@ -329,7 +360,7 @@ facade/
 ```bash
 cd behavioral/strategy
 composer install
-php client.php
+composer client
 composer test
 ```
 **Файловая структура примера**:
@@ -361,7 +392,7 @@ strategy/
 ```bash
 cd behavioral/template_method
 composer install
-php client.php
+composer client
 composer test
 ```
 **Файловая структура примера**:
@@ -392,7 +423,7 @@ template_method/
 ```bash
 cd behavioral/observer
 composer install
-php client.php
+composer client
 composer test
 ```
 **Файловая структура примера**:

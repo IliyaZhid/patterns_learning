@@ -1,9 +1,9 @@
 {
-  "name": "iliyazhid/adapter",
-  "description": "Adapter pattern example",
+  "name": "iliyazhid/proxy",
+  "description": "Proxy pattern example",
   "autoload": {
     "psr-4": {
-      "Structural\\Adapter\\": "lib/"
+      "Structural\\Proxy\\": "lib/"
     }
   },
   "require-dev": {
