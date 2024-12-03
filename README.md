@@ -29,7 +29,9 @@ patterns_learning/
 │ └── facade/  
 │   └── ...
 ├── behavioral/
-│ └── strategy/  
+│ ├── strategy/  
+│ │ └── ...
+│ └── template_method/  
 │   └── ...
 └── composer.json
 ```
@@ -338,6 +340,36 @@ strategy/
 │ └── Sorter.php
 ├── tests/
 │ └── StrategyTest.php
+├── client.php
+└── composer.json
+```
+</details>
+
+<details> 
+<summary>2. Шаблонный метод (Template Method)</summary>
+
+**Описание**: Паттерн Шаблонный метод определяет скелет алгоритма в методе, перекладывая ответственность за некоторые его шаги на подклассы. Это позволяет подклассам переопределять шаги алгоритма, не изменяя его структуру.
+
+**Пример**: Система генерации отчетов, которая должна поддерживать различные типы отчетов (например, отчет по продажам, отчет по клиентам).
+
+**Использование**:
+
+```bash
+cd behavioral/template_method
+composer install
+php client.php
+composer test
+```
+**Файловая структура примера**:
+```
+
+template_method/
+├── lib/
+│ ├── Report.php
+│ ├── SalesReport.php
+│ └── CustomerReport.php
+├── tests/
+│ └── TemplateMethodTest.php
 ├── client.php
 └── composer.json
 ```

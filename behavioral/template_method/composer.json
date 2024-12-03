@@ -1,9 +1,9 @@
 {
-  "name": "iliyazhid/strategy",
-  "description": "Strategy pattern example",
+  "name": "iliyazhid/template_method",
+  "description": "Template method pattern example",
   "autoload": {
     "psr-4": {
-      "Behavioral\\Strategy\\": "lib/"
+      "Behavioral\\TemplateMethod\\": "lib/"
     }
   },
   "require-dev": {
