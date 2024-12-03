@@ -10,77 +10,20 @@
 
 ```
 patterns_learning/  
-│  
 ├── creational/
 │ ├── factory_method/  
-│ │ ├── lib/  
-│ │ │ ├── Factories/  
-│ │ │ │ ├── RegularOrderFactory.php  
-│ │ │ │ ├── PreOrderFactory.php  
-│ │ │ │ └── DeliveryOrderFactory.php  
-│ │ │ ├── Orders/  
-│ │ │ │ ├── IOrder.php  
-│ │ │ │ ├── RegularOrder.php  
-│ │ │ │ ├── PreOrder.php  
-│ │ │ │ └── DeliveryOrder.php  
-│ │ │ └── OrderFactory.php  
-│ │ ├── tests/  
-│ │ │ └── OrderFactoryTest.php  
-│ │ ├── client.php  
-│ │ └── composer.json  
+│ │ └── ... 
 │ ├── abstract_factory/
-│ │ ├── lib/
-│ │ │ ├── Factories/
-│ │ │ │ ├── GUIFactory.php
-│ │ │ │ ├── WindowsFactory.php
-│ │ │ │ └── MacFactory.php
-│ │ │ ├── Products/
-│ │ │ │ ├── IButton.php
-│ │ │ │ ├── ICheckbox.php
-│ │ │ │ ├── WindowsButton.php
-│ │ │ │ ├── MacOSButton.php
-│ │ │ │ ├── WindowsCheckbox.php
-│ │ │ │ └── MacOSCheckbox.php
-│ │ ├── tests/
-│ │ │ └── AbstractFactoryTest.php
-│ │ ├── client.php  
-│ │ └── composer.json
+│ │ └── ...
 │ ├── builder/
-│ │ ├── lib/
-│ │ │ ├── Builders/
-│ │ │ │ ├── IPizzaBuilder.php
-│ │ │ │ ├── PepperoniPizzaBuilder.php
-│ │ │ │ ├── MushroomPizzaBuilder.php
-│ │ │ │ └── HawaiianPizzaBuilder.php
-│ │ │ ├── Products/
-│ │ │ │ └── Pizza.php
-│ │ │ └── PizzaDirector.php
-│ │ ├── tests/
-│ │ │ └── PizzaBuilderTest.php
-│ │ ├── client.php  
-│ │ └── composer.json
+│ │ └── ...
 │ ├── prototype/
-│ │ ├── lib/
-│ │ │ ├── IDocumentPrototype.php
-│ │ │ ├── Document.php
-│ │ │ ├── InvoiceDocument.php
-│ │ │ ├── ContractDocument.php
-│ │ │ └── ReportDocument.php
-│ │ ├── tests/
-│ │ │ └── DocumentPrototypeTest.php
-│ │ ├── client.php  
-│ │ └── composer.json
+│ │ └── ...
 │ └── singleton/
-│ ├── lib/
-│ │ ├── ISettingsInterface.php
-│ │ ├── Settings.php
-│ │ └── AppSettings.php
-│ ├── tests/
-│ │ └── SettingsTest.php
-│ ├── client.php  
-│ └── composer.json
+│   └── ...
 ├── structural/
-│ └── ...
+│ └── adapter/  
+│   └── ...
 ├── behavioral/
 │ └── ...
 └── composer.json
@@ -108,6 +51,26 @@ php client.php
 composer test
 ```
 
+**Файловая структура примера**:
+```
+factory_method/  
+├── lib/  
+│ ├── Factories/  
+│ │ ├── RegularOrderFactory.php  
+│ │ ├── PreOrderFactory.php  
+│ │ └── DeliveryOrderFactory.php  
+│ ├── Orders/  
+│ │ ├── IOrder.php  
+│ │ ├── RegularOrder.php  
+│ │ ├── PreOrder.php  
+│ │ └── DeliveryOrder.php  
+│ └── OrderFactory.php  
+├── tests/  
+│ └── OrderFactoryTest.php  
+├── client.php  
+└── composer.json
+```
+
 </details>
 <details>
   <summary>2. Абстрактная фабрика (Abstract Factory)</summary>
@@ -127,7 +90,26 @@ composer install
 php client.php
 composer test
 ```
-
+**Файловая структура примера**:
+```
+abstract_factory/
+├── lib/
+│ ├── Factories/
+│ │ ├── GUIFactory.php
+│ │ ├── WindowsFactory.php
+│ │ └── MacFactory.php
+│ ├── Products/
+│ │ ├── IButton.php
+│ │ ├── ICheckbox.php
+│ │ ├── WindowsButton.php
+│ │ ├── MacOSButton.php
+│ │ ├── WindowsCheckbox.php
+│ │ └── MacOSCheckbox.php
+├── tests/
+│ └── AbstractFactoryTest.php
+├── client.php  
+└── composer.json
+```
 </details>
 
 <details>
@@ -146,7 +128,23 @@ composer install
 php client.php
 composer test
 ```
-
+**Файловая структура примера**:
+```
+builder/
+├── lib/
+│ ├── Builders/
+│ │ ├── IPizzaBuilder.php
+│ │ ├── PepperoniPizzaBuilder.php
+│ │ ├── MushroomPizzaBuilder.php
+│ │ └── HawaiianPizzaBuilder.php
+│ ├── Products/
+│ │ └── Pizza.php
+│ └── PizzaDirector.php
+├── tests/
+│ └── PizzaBuilderTest.php
+├── client.php  
+└── composer.json
+```
 </details>
 <details>
   <summary>4. Прототип (Prototype)</summary>
@@ -163,7 +161,20 @@ composer install
 php client.php
 composer test
 ```
-
+**Файловая структура примера**:
+```
+prototype/
+├── lib/
+│ ├── IDocumentPrototype.php
+│ ├── Document.php
+│ ├── InvoiceDocument.php
+│ ├── ContractDocument.php
+│ └── ReportDocument.php
+├── tests/
+│ └── DocumentPrototypeTest.php
+├── client.php  
+└── composer.json
+```
 </details>
 
 <details> 
@@ -181,12 +192,53 @@ composer install
 php client.php
 composer test
 ```
-
+**Файловая структура примера**:
+```
+singleton/
+├── lib/
+│ ├── ISettingsInterface.php
+│ ├── Settings.php
+│ └── AppSettings.php
+├── tests/
+│ └── SettingsTest.php
+├── client.php  
+└── composer.json
+```
 </details>
 
 ## Структурные паттерны проектирования
 
-Work in progress...
+<details> 
+<summary>1. Адаптер (Adapter)</summary>
+
+**Описание**: Паттерн Адаптер позволяет объектам с несовместимыми интерфейсами работать вместе. Он оборачивает один из объектов так, чтобы он мог взаимодействовать с другим объектом через общий интерфейс.
+
+**Пример**: Система управления умным домом, которая должна поддерживать работу с устройствами различных производителей.
+
+**Использование**:
+
+```bash
+cd creational/adapter
+composer install
+php client.php
+composer test
+```
+**Файловая структура примера**:
+```
+adapter/
+├── lib/
+│ ├── Devices/
+│ │ ├── ISmartDevice.php
+│ │ ├── Light.php
+│ │ └── Socket.php
+│ ├── SmartHomeController.php
+│ └── SocketAdapter.php
+├── tests/
+│ └── AdapterTest.php
+├── client.php
+└── composer.json
+```
+</details>
 
 ## Поведенческие паттерны проектирования
 
