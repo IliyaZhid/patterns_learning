@@ -1,0 +1,15 @@
+{
+  "name": "iliyazhid/bridge",
+  "description": "Bridge pattern example",
+  "autoload": {
+    "psr-4": {
+      "Structural\\Bridge\\": "lib/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "scripts": {
+    "test": "phpunit tests/"
+  }
+}
