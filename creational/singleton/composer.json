@@ -6,9 +6,6 @@
       "Creational\\Singleton\\": "lib/"
     }
   },
-  "require": {
-    "vlucas/phpdotenv": "^5.3"
-  },
   "require-dev": {
     "phpunit/phpunit": "^9.5"
   },
