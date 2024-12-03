@@ -1,5 +1,5 @@
 {
-  "name": "iliyazhid/abstract-factory",
+  "name": "iliyazhid/prototype",
   "description": "Prototype pattern example",
   "autoload": {
     "psr-4": {

@@ -1,5 +1,5 @@
 {
-  "name": "iliyazhid/abstract-factory",
+  "name": "iliyazhid/singleton",
   "description": "Singleton pattern example",
   "autoload": {
     "psr-4": {

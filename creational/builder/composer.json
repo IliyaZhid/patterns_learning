@@ -1,5 +1,5 @@
 {
-  "name": "iliyazhid/factory-method",
+  "name": "iliyazhid/builder",
   "description": "Builder pattern example",
   "autoload": {
     "psr-4": {
