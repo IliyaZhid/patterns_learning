@@ -1,0 +1,15 @@
+{
+  "name": "iliyazhid/facade",
+  "description": "facade pattern example",
+  "autoload": {
+    "psr-4": {
+      "Structural\\Facade\\": "lib/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "scripts": {
+    "test": "phpunit tests/"
+  }
+}
